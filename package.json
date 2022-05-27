@@ -1,6 +1,7 @@
 {
   "name": "liste-courses",
   "version": "0.1.0",
+  "description": "Ma liste de courses",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
