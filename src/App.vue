@@ -9,7 +9,7 @@
         <h2>Inventaire des placards</h2>
         <div class="placards" v-for="(produitsPlacards, index) in produitsPlacards" :key="produitsPlacards.produit">
             <label>
-                {{produitsPlacards.produit}}
+                {{ produitsPlacards.produit }}
                 <input type="checkbox" v-model="produitsPlacards.selected"  :value="produitsPlacards.produit" @click="(this.produitsPlacards[index].selected) = !(this.produitsPlacards[index].selected)">
             </label>  
         </div>
@@ -39,8 +39,8 @@ export default {
         {produit: "Surgelés", selected: false},
         {produit: "Produits d'entretien", selected: false},
       ],
-      listeCourses: {},
-      produitsPlacards: {},
+      listeCourses: [],
+      produitsPlacards: [],
     }
   },
   created: function () {
